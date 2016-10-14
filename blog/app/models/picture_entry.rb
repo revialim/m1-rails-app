@@ -1,0 +1,2 @@
+class PictureEntry < ApplicationRecord
+end

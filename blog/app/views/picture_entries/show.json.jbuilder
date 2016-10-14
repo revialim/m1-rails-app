@@ -1,0 +1,1 @@
+json.partial! "picture_entries/picture_entry", picture_entry: @picture_entry
