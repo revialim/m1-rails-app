@@ -1,5 +1,8 @@
 1.  Write down your project vision.
 
+Creating a picture entry which shows you photos including title, description, location, path and a date when the picture was created and updated. 
+
+
 2.  Write down your product backlog. Roughly prioritize it for business value. Don’t hesitate to write down as many stories as you want, you don’t have to implement them all.
 
 3.  Pick a user story that you can implement with simple CRUD operations.
