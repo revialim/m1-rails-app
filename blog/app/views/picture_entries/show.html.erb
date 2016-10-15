@@ -18,6 +18,7 @@
 <p>
   <strong>Picture:</strong>
   <%= @picture_entry.picture %>
+  <%= image_tag(@picture_entry.picture_url, width: 800) if @picture_entry.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_picture_entry_path(@picture_entry) %> |
