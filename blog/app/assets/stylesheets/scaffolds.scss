@@ -43,6 +43,23 @@ td {
   padding-right: 5px;
 }
 
+tbody {
+	tr {
+		&:nth-child(even){
+			background-color: #f2f2f2;
+		}
+		&:nth-child(odd){
+			background-color: #e2e2e2;		
+		}
+	}
+}
+
+thead {
+	th {
+		text-align: left;
+	}
+}
+
 div {
   &.field, &.actions {
     margin-bottom: 10px;
@@ -87,3 +104,23 @@ div {
 label {
   display: block;
 }
+
+.button {
+	display: inline-block;
+  	background-color: #333;
+  	border-radius: 5px;
+  	padding: 8px 15px;
+
+  	a {
+  		color: #fff;
+  		text-decoration: none;
+
+  		&:hover {
+  			background-color: transparent;
+  		}
+  	}
+
+  	&:hover {
+	  	opacity: 0.75;
+	}
+  }
