@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161014151223) do
+ActiveRecord::Schema.define(version: 20161017194544) do
+
+  create_table "likes", force: :cascade do |t|
+    t.string   "user_name"
+    t.integer  "picture_entry_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "picture_entries", force: :cascade do |t|
     t.string   "title"
@@ -19,6 +26,14 @@ ActiveRecord::Schema.define(version: 20161014151223) do
     t.string   "picture"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "userlikes", force: :cascade do |t|
+    t.string   "user_name"
+    t.boolean  "isliked"
+    t.integer  "picture_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

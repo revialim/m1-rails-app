@@ -19,6 +19,12 @@
   <strong>Picture:</strong>
   <%= @picture_entry.picture %>
   <%= image_tag(@picture_entry.picture_url, width: 800) if @picture_entry.picture.present? %>
+  <div>Likes</div>
+  <% @likes.each do |like| %>
+    <%= like.user_name %>
+    <%= link_to 'Delete like', link_path(like), method: :delete, data: { confirm: 'Delete like?' } %>
+  <% end %>
+<!-- %= render 'likes/form' % -->
 </p>
 
 <div class="button"><%= link_to 'Edit', edit_picture_entry_path(@picture_entry) %></div> |

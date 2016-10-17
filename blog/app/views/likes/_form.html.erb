@@ -1,0 +1,24 @@
+<%= form_for(like) do |f| %>
+  <% if like.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(like.errors.count, "error") %> prohibited this like from being saved:</h2>
+
+      <ul>
+      <% like.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_name %>
+    <%= f.text_field :user_name %>
+  </div>
+
+  <%= f.hidden_field :picture_entry_id %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

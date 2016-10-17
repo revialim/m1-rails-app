@@ -10,6 +10,8 @@ class PictureEntriesController < ApplicationController
   # GET /picture_entries/1
   # GET /picture_entries/1.json
   def show
+    @likes = @picture_entry.likes.all
+    @like = @picture_entry.likes.build
   end
 
   # GET /picture_entries/new
