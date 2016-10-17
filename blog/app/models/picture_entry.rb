@@ -1,4 +1,4 @@
 class PictureEntry < ApplicationRecord
-has_many :likes
-mount_uploader :picture, PictureUploader
+  has_many :likes
+  mount_uploader :picture, PictureUploader
 end
