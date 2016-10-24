@@ -15,7 +15,7 @@
     <% @likes.each do |like| %>
       <tr>
         <td><%= like.user_name %></td>
-        <td><%= like.picture_entry_id %></td>
+        <td><%= like.picture_entry %></td>
         <td><%= link_to 'Show', like %></td>
         <td><%= link_to 'Edit', edit_like_path(like) %></td>
         <td><%= link_to 'Destroy', like, method: :delete, data: { confirm: 'Are you sure?' } %></td>

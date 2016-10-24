@@ -16,7 +16,10 @@
     <%= f.text_field :user_name %>
   </div>
 
-  <%= f.hidden_field :picture_entry_id %>
+  <div class="field">
+    <%= f.label :picture_entry_id %>
+    <%= f.text_field :picture_entry_id %>
+  </div>
 
   <div class="actions">
     <%= f.submit %>

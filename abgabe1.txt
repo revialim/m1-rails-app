@@ -1,0 +1,8 @@
+Assignments for Web Technology
+
+Link zum Github-Repository:
+https://github.com/revialim/m1-rails-app/
+
+Abgabe von Julia Preuss und Lilian Hung
+
+

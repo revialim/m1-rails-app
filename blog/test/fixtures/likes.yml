@@ -2,8 +2,8 @@
 
 one:
   user_name: MyString
-  picture_entry_id: 1
+  picture_entry: one
 
 two:
   user_name: MyString
-  picture_entry_id: 1
+  picture_entry: two

@@ -19,12 +19,16 @@
   <strong>Picture:</strong>
   <%= @picture_entry.picture %>
   <%= image_tag(@picture_entry.picture_url, width: 800) if @picture_entry.picture.present? %>
-  <div>Likes</div>
+
+<h2>Likes</h2>
+  <% likecounter = 0 %>
   <% @likes.each do |like| %>
-    <%= like.user_name %>
-    <%= link_to 'Delete like', link_path(like), method: :delete, data: { confirm: 'Delete like?' } %>
+    <%= like.user_name %> likes this picture.<br>
+    <% likecounter = likecounter +1 %>
   <% end %>
-<!--%= render 'likes/form' %-->
+<% if likecounter > 1 %>
+This picture has <%= likecounter %> likes.
+<% end %>
 </p>
 
 <div class="button"><%= link_to 'Edit', edit_picture_entry_path(@picture_entry) %></div> |
