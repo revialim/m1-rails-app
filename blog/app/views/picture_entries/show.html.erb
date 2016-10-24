@@ -19,7 +19,8 @@
   <strong>Picture:</strong>
   <%= @picture_entry.picture %>
   <%= image_tag(@picture_entry.picture_url, width: 800) if @picture_entry.picture.present? %>
-
+</p>
+<p>
 <h2>Likes</h2>
   <% likecounter = 0 %>
   <% @likes.each do |like| %>
@@ -29,6 +30,21 @@
 <% if likecounter > 1 %>
 This picture has <%= likecounter %> likes.
 <% end %>
+
+<h3>Add a new like</h3>
+	<%= form_for @like do |f| %>
+	  <div class="field">
+	    <%= f.label :user_name %>
+	    <%= f.text_field :user_name %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :picture_entry_id %>
+            <%= f.text_field :picture_entry_id %>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
+	<% end %>
 </p>
 
 <div class="button"><%= link_to 'Edit', edit_picture_entry_path(@picture_entry) %></div> |
