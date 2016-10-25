@@ -1,0 +1,42 @@
+1. Pick a story that requires you to introduce at least one new Resource to your Project.
+
+- Users can add a like to the picture they are looking at.
+
+
+2. Update your sketch of the data model, if needed.
+
+- A like is an entity/resource adds a username (of the user who likes the image) to an image.
+
+- The liking user is stored as a string.
+
+--> see 'tasks_week2_data-model.jpg'
+
+
+3. Update your view sketches to integrate the new resource.
+
+--> see 'tasks_week2_sketches.jpg'
+
+4. Create the new resource.
+
+Created the like resource via "rails generate scaffold like user_name:string picture_entry:references".
+
+
+5. Declare the Association in the other Model class
+
+Added "has_many: likes" association to picture_entry class.
+
+
+6. Adapt/Extend the migrations as needed.
+
+Adapted migrations by running "rake db:migrate" after generating likes resource. The automatically generated migration was sufficient for my case.
+
+
+7. Adapt Model/Views/Controllers to new model
+
+The view of the picture entry had to be adjusted. The form for adding likes and a list of all existing likes was integrated into the picture entry view.
+
+I added "@likes = @picture_entry.likes.all" and "@like = @picture_entry.likes.build" to the picture_entry_controller.rb, so that the like could be displayed in the picture entry view.
+
+
+8. Implement some more
+
