@@ -1,3 +1,9 @@
+Github Repository:
+https://github.com/revialim/m1-rails-app/
+
+--- Tasks (week 2) ---
+
+
 1. Pick a story that requires you to introduce at least one new Resource to your Project.
 
 - Users can add a like to the picture they are looking at.
@@ -9,12 +15,12 @@
 
 - The liking user is stored as a string.
 
---> see 'tasks_week2_data-model.jpg'
+--> see 'tasks_week2_data-model.jpg' //on github repository in folder tasks_week2
 
 
 3. Update your view sketches to integrate the new resource.
 
---> see 'tasks_week2_sketches.jpg'
+--> see 'tasks_week2_sketches.jpg' //on github repository in folder tasks_week2
 
 4. Create the new resource.
 
