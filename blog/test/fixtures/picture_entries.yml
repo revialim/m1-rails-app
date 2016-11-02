@@ -5,9 +5,12 @@ one:
   description: MyText
   location: MyString
   picture: MyString
+  filterset: false
 
 two:
   title: MyString
   description: MyText
   location: MyString
   picture: MyString
+  filterset: true
+

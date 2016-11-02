@@ -1,0 +1,49 @@
+1. Create at least one happy-path feature test for each person on your team. Use Capybara.
+
+Going to test following feature:
+- black-and-white filter-toggle
+
+2. Test cleanup
+
+Was not necessary, because running 'rails test' had no failures or errors.
+
+--------------------
+See following status message:
+---
+$ rails test
+Running via Spring preloader in process 5955
+Run options: --seed 57595
+
+# Running:
+
+...............
+
+Finished in 0.616398s, 24.3349 runs/s, 30.8242 assertions/s.
+
+15 runs, 19 assertions, 0 failures, 0 errors, 0 skips
+--------------------
+
+(It might be useful to keep some of the generated tests around while you haven’t implemented enough tests to be confident that they cover enough of your application - we’ll see an excellent example of this later!)
+--> Due to this hint, I rather keep all the generated tests.
+
+
+3. Create test data for the tests using fixtures.
+
+
+
+4. Create a model test.
+
+
+5. Create seed data for playing around in development mode, and also some if you need/want seed data in production.
+
+
+6. Set up automated integration tests on travis ci for your project. Include a “build passing” button in your readme.
+
+
+---
+
+7. Set up an Automated Deployment to Heroku for your project.
+
+8. For the bored: set up a build matrix testing both against postgres and sqlite on travis
+
+9. Automatically Deploy every successful Build from Travis.

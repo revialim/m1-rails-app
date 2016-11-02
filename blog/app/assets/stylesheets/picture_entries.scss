@@ -9,3 +9,7 @@ img {
 	max-height: 80vh;
 	padding: 10px 0;
 }
+
+.grayscale img {
+	filter: grayscale(100%);
+}

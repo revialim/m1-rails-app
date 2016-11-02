@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   resources :likes
-  resources :picture_entries
+  resources :picture_entries do
+  	put 'togglefilter'
+  end
+
   get 'welcome/index'
 
   root 'picture_entries#index'

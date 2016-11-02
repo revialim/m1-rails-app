@@ -18,7 +18,22 @@
 <p>
   <strong>Picture:</strong>
   <%= @picture_entry.picture %>
+</p>
+<p>
+  <strong>Filter:</strong>
+  <% if @picture_entry.filterset %>
+    Filter is set.
+  <% else %>
+    Filter not set.
+  <% end %>
+
+  <%= form_tag picture_entry_togglefilter_path(@picture_entry) , method: :put do | form |%>
+     <%= button_tag "Toggle grayscale"%>
+  <% end %>
+
+  <div class="<%= @picture_entry.filterset ? 'grayscale' : '' %>">
   <%= image_tag(@picture_entry.picture_url, width: 800) if @picture_entry.picture.present? %>
+  </div>
 </p>
 <p>
 <h2>Likes</h2>
