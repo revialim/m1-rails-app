@@ -19,7 +19,6 @@ class PictureEntriesControllerTest < ActionDispatch::IntegrationTest
     assert_difference('PictureEntry.count') do
       post picture_entries_url, params: { picture_entry: { description: @picture_entry.description, location: @picture_entry.location, picture: @picture_entry.picture, title: @picture_entry.title, filterset: @picture_entry.filterset } }
     end
-
     assert_redirected_to picture_entry_url(PictureEntry.last)
   end
 
