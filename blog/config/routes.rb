@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+# get 'sessions/new'
+# get 'sessions/create'
+# get 'sessions/destroy'
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete 'l/logout', to: 'sessions#destroy'
+
   resources :users
   resources :likes
   resources :picture_entries do
