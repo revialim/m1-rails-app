@@ -19,7 +19,7 @@ module SessionsHelper
 	protected
     def authorize
       unless current_user
-        redirect_to login_url, notice: "Please log in"
+        redirect_to login_url, notice: "To access page content, login first."
       end
     end
 end

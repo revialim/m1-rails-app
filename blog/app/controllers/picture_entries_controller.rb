@@ -1,5 +1,5 @@
 class PictureEntriesController < ApplicationController
-  skip_before_action :authorize, only: [:show]
+  #skip_before_action :authorize, only: [:show]
   before_action :set_picture_entry, only: [:show, :edit, :update, :destroy]
 
   # GET /picture_entries
