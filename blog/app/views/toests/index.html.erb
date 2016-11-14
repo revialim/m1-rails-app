@@ -3,6 +3,19 @@
 <h1>Toests</h1>
 <h2>They are like toasts, but for testing</h2>
 
+<ul id="toests">
+<%= render @toests %>
+</ul>
+<br>
+
+<%= form_for(@toest, remote: true) do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+<hr>
+<br>
+
 <table>
   <thead>
     <tr>

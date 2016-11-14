@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= link_to "Eat toest, it will be gone", @toest, remote: true, method: :delete %>
+
 <p>
   <strong>Name:</strong>
   <%= @toest.name %>
