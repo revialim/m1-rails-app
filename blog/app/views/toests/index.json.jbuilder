@@ -1,0 +1,1 @@
+json.array! @toests, partial: 'toests/toest', as: :toest

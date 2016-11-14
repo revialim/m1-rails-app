@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @toest.name %>
+</p>
+
+<p>
+  <strong>Crunchiness:</strong>
+  <%= @toest.crunchiness %>
+</p>
+
+<p>
+  <strong>Sweet:</strong>
+  <%= @toest.sweet %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @toest.price %>
+</p>
+
+<%= link_to 'Edit', edit_toest_path(@toest) %> |
+<%= link_to 'Back', toests_path %>

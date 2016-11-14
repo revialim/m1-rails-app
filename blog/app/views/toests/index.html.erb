@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Toests</h1>
+<h2>They are like toasts, but for testing</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Crunchiness</th>
+      <th>Sweet</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @toests.each do |toest| %>
+      <tr>
+        <td><%= toest.name %></td>
+        <td><%= toest.crunchiness %></td>
+        <td><%= toest.sweet %></td>
+        <td><%= toest.price %></td>
+        <td><%= link_to 'Show', toest %></td>
+        <td><%= link_to 'Edit', edit_toest_path(toest) %></td>
+        <td><%= link_to 'Destroy', toest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Toest', new_toest_path %>

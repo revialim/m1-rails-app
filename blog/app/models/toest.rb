@@ -1,0 +1,2 @@
+class Toest < ApplicationRecord
+end

@@ -1,0 +1,1 @@
+json.partial! "toests/toest", toest: @toest
