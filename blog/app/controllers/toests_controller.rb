@@ -30,6 +30,7 @@ class ToestsController < ApplicationController
     respond_to do |format|
       if @toest.save
         format.html { redirect_to @toest, notice: 'Toest was successfully created.' }
+        format.js   {}
         format.json { render :show, status: :created, location: @toest }
       else
         format.html { render :new }
@@ -57,7 +58,7 @@ class ToestsController < ApplicationController
   def destroy
     @toest.destroy
     respond_to do |format|
-      format.html { redirect_to toests_url, notice: 'Toest was successfully destroyed.' }
+      format.html { redirect_to toests_url, notice: 'Toest was eaten.' }
       format.json { head :no_content }
     end
   end
