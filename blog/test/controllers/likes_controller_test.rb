@@ -10,39 +10,39 @@ class LikesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get new" do
-    get new_like_url
-    assert_response :success
-  end
+#  test "should get new" do
+#    get new_like_url
+#    assert_response :success
+#  end
 
-  test "should create like" do
-    assert_difference('Like.count') do
-      post likes_url, params: { like: { picture_entry_id: @like.picture_entry_id, user_name: @like.user_name } }
-    end
+#  test "should create like" do
+#    assert_difference('Like.count') do
+#      post likes_url, params: { like: { picture_entry_id: @like.picture_entry_id, user_name: @like.user_name } }
+#    end
 
-    assert_redirected_to like_url(Like.last)
-  end
+#    assert_redirected_to like_url(Like.last)
+#  end
 
   test "should show like" do
     get like_url(@like)
     assert_response :success
   end
 
-  test "should get edit" do
-    get edit_like_url(@like)
-    assert_response :success
-  end
+#  test "should get edit" do
+#    get edit_like_url(@like)
+#    assert_response :success
+#  end
 
   test "should update like" do
     patch like_url(@like), params: { like: { picture_entry_id: @like.picture_entry_id, user_name: @like.user_name } }
     assert_redirected_to like_url(@like)
   end
 
-  test "should destroy like" do
-    assert_difference('Like.count', -1) do
-      delete like_url(@like)
-    end
-
-    assert_redirected_to likes_url
-  end
+#  test "should destroy like" do
+#    assert_difference('Like.count', -1) do
+#      delete like_url(@like)
+#    end
+#
+#    assert_redirected_to likes_url
+#  end
 end
