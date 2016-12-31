@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161031204704) do
+ActiveRecord::Schema.define(version: 20161114145252) do
 
   create_table "likes", force: :cascade do |t|
     t.string   "user_name"
@@ -30,12 +30,28 @@ ActiveRecord::Schema.define(version: 20161031204704) do
     t.boolean  "filterset"
   end
 
+  create_table "toests", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "crunchiness"
+    t.boolean  "sweet"
+    t.integer  "price"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "userlikes", force: :cascade do |t|
     t.string   "user_name"
     t.boolean  "isliked"
     t.integer  "picture_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "username"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end
