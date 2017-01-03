@@ -49,3 +49,15 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+#settings for testing
+group :test do
+  # see https://github.com/jnicklas/capybara#setup
+  gem 'capybara'
+  gem 'launchy'
+end
+
+# set ruby version for heroku
+
+ruby '2.3.1'
