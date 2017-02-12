@@ -2,7 +2,7 @@ require 'test_helper'
 
 class PictureEntriesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @picture_entry = picture_entries(:one)
+    @picture_entry = picture_entries(:firstpic)
   end
 
   test "should get index" do

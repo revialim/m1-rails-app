@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  user_name: MyString
-  picture_entry: one
+likeonfirst1:
+  user_name: "Pumkin"
+  picture_entry: firstpic
 
-two:
-  user_name: MyString
-  picture_entry: two
+likeonfirst2:
+  user_name: "Someuser"
+  picture_entry: firstpic
+
+likeonsecond1:
+  user_name: "Dr.Who"
+  picture_entry: secondpic

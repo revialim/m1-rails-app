@@ -1,16 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
-  location: MyString
-  picture: MyString
-  filterset: false
+firstpic:
+  title: "sunny day"
+  description: "day that is sunny"
+  location: "garden"
+  picture: "/uploads/picture_entry/picture/3/cityatnight.png"
 
-two:
-  title: MyString
-  description: MyText
-  location: MyString
-  picture: MyString
-  filterset: true
-
+secondpic:
+  title: "rainy day"
+  description: "day that ist wet and cloudy"
+  location: "indoors"
+  picture: "/uploads/picture_entry/picture/3/cityatnight.png"
